@@ -1,7 +1,6 @@
 <?php
 /*
 Plugin Name: Comment Limiter
-Plugin URI:  https://wpbody.com/
 Description: A simple plugin that limit the maximum and minimum of characters allowed in a post comment
 Version:     1.0
 Author:      Anass Rahou
