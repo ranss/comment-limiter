@@ -1,5 +1,4 @@
 # Comment Limiter
-A WordPress plugin that allows yo to limit number of minimum and maximum of characters allowed in comments on your website
 
 Comment Limiter allows you to setup a limit of maximum and minimum characters allowed in each comment in your website, with the following features:
 
