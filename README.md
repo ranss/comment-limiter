@@ -10,18 +10,18 @@ Comment Limiter allows you to setup a limit of maximum and minimum characters al
 
 Pull requests are welcome on [Github](https://github.com/ranss/comment-limiter).
 
-== Installation ==
+## Installation
 
 1. Install the plugin through your dashboard.
 2. Navigate to Comment Limiter menu.
 3. Insert your settings values.
 3. Done.
 
-== Support ==
+## Support
 
 For questions, feature requests, and support concerning the Comment Limiter plugin, please refer to [Github](https://github.com/ranss/comment-limiter).
 
-== Changelog ==
+## Changelog
 
-= 1.0 =
+#### 1.0
 * Plugin released
