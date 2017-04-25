@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#: includes/class-comment-limiter-settings.php:125
+#: includes/class-comment-limiter-settings.php:148
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: comment-limiter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-18 11:44-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: comment-limiter.php:46
+#, php-format
+msgid "<a href=\"%s\">Settings</a>"
+msgstr ""
+
+#: includes/class-comment-limiter-settings.php:89
+#: includes/class-comment-limiter-settings.php:90
+#: includes/class-comment-limiter-settings.php:117
+msgid "Comment Limiter"
+msgstr ""
+
+#: includes/class-comment-limiter-settings.php:155
+msgid "Maximum Characters Number"
+msgstr ""
+
+#: includes/class-comment-limiter-settings.php:167
+msgid "Minimum Characters Number"
+msgstr ""
+
+#: includes/class-comment-limiter-settings.php:179
+msgid "Apply Settings to Admins"
+msgstr ""
+
+#: includes/class-comment-limiter-settings.php:202
+msgid "Invalid lengths. Please insert logical values."
+msgstr ""
+
+#: includes/class-comment-limiter-settings.php:218
+msgid "Comment Limiter settings saved correctly."
+msgstr ""
+
+#: includes/class-comment-limiter-settings.php:256
+#, php-format
+msgid ""
+"Comment too short, you're missing %d characters to reach the minimum number. "
+"Please, be more expressive!"
+msgstr ""
+
+#: includes/class-comment-limiter-settings.php:257
+#: includes/class-comment-limiter-settings.php:268
+msgid "Comment Limiter Error"
+msgstr ""
+
+#: includes/class-comment-limiter-settings.php:267
+#, php-format
+msgid ""
+"Comment too long, you have +%d characters left, to reach the maximum number "
+"allowed."
+msgstr ""
+
+#: includes/class-comment-limiter-settings.php:290
+#: includes/class-comment-limiter-settings.php:307
+msgid "Accepts only numbers"
+msgstr ""
+
+#: includes/class-comment-limiter-settings.php:291
+msgid ""
+"If the user inserts a comment that is fewer than the number selected above, "
+"then, it will receives an advice message to extend his comment."
+msgstr ""
+
+#: includes/class-comment-limiter-settings.php:308
+msgid ""
+"If the user inserts a comment that is larger than the number selected above, "
+"then, it will receives an advice message to minimize his comment."
+msgstr ""
+
+#: includes/class-comment-limiter-settings.php:324
+msgid "No"
+msgstr ""
+
+#: includes/class-comment-limiter-settings.php:325
+msgid "Yes"
+msgstr ""
+
+#: includes/class-comment-limiter-settings.php:327
+msgid ""
+"This will allows users with administrator capabilities to publish comments "
+"despite the configuration of Comment Limiter plugin."
+msgstr ""

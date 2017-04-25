@@ -1,4 +1,13 @@
-# Comment Limiter
+=== Simple Cache ===
+Contributors: ranss
+Tags: comment, length, limit, maximum, comment length, minimum comment, comment characters
+Requires at least: 4.0
+Tested up to: 4.7.4
+Stable tag: trunk
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+== Description ==
 
 Comment Limiter allows you to setup a limit of maximum and minimum characters allowed in each comment in your website, with the following features:
 
@@ -9,18 +18,18 @@ Comment Limiter allows you to setup a limit of maximum and minimum characters al
 
 Pull requests are welcome on [Github](https://github.com/ranss/comment-limiter).
 
-## Installation
+== Installation ==
 
 1. Install the plugin through your dashboard.
 2. Navigate to Comment Limiter menu.
 3. Insert your settings values.
 3. Done.
 
-## Support
+== Support ==
 
 For questions, feature requests, and support concerning the Comment Limiter plugin, please refer to [Github](https://github.com/ranss/comment-limiter).
 
-## Changelog
+== Changelog ==
 
-#### 1.0
+= 1.0 =
 * Plugin released
