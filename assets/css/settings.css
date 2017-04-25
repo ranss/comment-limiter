@@ -1,0 +1,14 @@
+.comment-limiter-form tr {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-table {
+    width: 50%;
+}
+
+tr.maximum_characters span.description,
+tr.minimum_characters span.description {
+    margin-bottom: 10px;
+    display: inline-block;
+}
