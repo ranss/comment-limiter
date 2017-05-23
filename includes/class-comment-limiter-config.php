@@ -1,37 +1,38 @@
 <?php
 /**
- * If accessed directly, then exit
+ * If accessed directly, then exit.
  */
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
 /**
- * Check if class already exists
+ * Check if class already exists.
  */
 if ( ! class_exists( 'Comment_Limiter_Config' ) ) {
     
     /**
-     * Configuration class
+     * Configuration class.
      */
     class Comment_Limiter_Config
     {
 
         /**
-         * Property instance
+         * Property instance.
          * 
          * @var object
          */
         private static $_instance;
 
         /**
-         * Handles default values
+         * Handles default values.
+         * 
          * @var array
          */
         public $defaults = array();
 
         /**
-         * Create default values
+         * Create default values.
          */
         public function __construct() {
 
@@ -49,7 +50,7 @@ if ( ! class_exists( 'Comment_Limiter_Config' ) ) {
         }
 
         /**
-         * Return only default values
+         * Return only default values.
          * 
          * @return array default values
          */
@@ -64,7 +65,7 @@ if ( ! class_exists( 'Comment_Limiter_Config' ) ) {
         }
 
         /**
-         * Parse default values
+         * Parse default values.
          * 
          * @return array default values parsed
          */
@@ -76,7 +77,7 @@ if ( ! class_exists( 'Comment_Limiter_Config' ) ) {
         }
 
         /**
-         * Instance class object
+         * Instance class object.
          * 
          * @return object
          */
