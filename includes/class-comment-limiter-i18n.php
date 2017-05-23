@@ -1,13 +1,13 @@
 <?php
 /**
- * If accessed directly, then exit
+ * If accessed directly, then exit.
  */
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
 /**
- * If class do not exists, then create it
+ * If class do not exists, then create it.
  */
 if ( ! class_exists( 'Comment_Limiter_i18n' ) ) {
 
@@ -18,7 +18,7 @@ if ( ! class_exists( 'Comment_Limiter_i18n' ) ) {
     {
 
         /**
-         * Property instance
+         * Property instance.
          *
          * @since 1.0
          * @var object
@@ -35,7 +35,7 @@ if ( ! class_exists( 'Comment_Limiter_i18n' ) ) {
         }
 
         /**
-         * Setup action and filter hooks
+         * Setup action and filter hooks.
          *
          * @since 1.0
          * @return boolean
@@ -58,7 +58,7 @@ if ( ! class_exists( 'Comment_Limiter_i18n' ) ) {
         }
 
         /**
-         * Instance class object
+         * Instance class object.
          *
          * @since 1.0
          * @return object
