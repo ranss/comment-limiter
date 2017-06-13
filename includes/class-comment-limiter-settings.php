@@ -57,10 +57,10 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
          */
         public function setup() {
 
-            add_action( 'admin_init', array( $this, 'comment_limiter_page_init' ) );
+            add_action( 'admin_init',            array( $this, 'comment_limiter_page_init' ) );
+            add_action( 'admin_menu',            array( $this, 'comment_limiter_add_plugin_page' ) );
+            add_filter( 'preprocess_comment',    array( $this, 'comment_limiter_checker' ) );
             add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_styles' ) );
-            add_filter( 'preprocess_comment', array( $this, 'comment_limiter_checker' ) );
-            add_action( 'admin_menu', array( $this, 'comment_limiter_add_plugin_page' ) );
 
             $this->_comment_limiter_options = get_option( 'comment_limiter_settings' );
         }
