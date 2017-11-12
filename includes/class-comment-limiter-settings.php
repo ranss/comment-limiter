@@ -78,21 +78,20 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
         }
 
         /**
-         * Add menu page in the dashboard
+         * Add submenu page in the dashboard
          *
          * @since 1.0
          * @return string
          */
         public function comment_limiter_add_plugin_page() {
 
-            add_menu_page(
+            add_submenu_page(
+                'edit-comments.php',
                 __( 'Comment Limiter', 'comment-limiter' ),
                 __( 'Comment Limiter', 'comment-limiter' ),
                 'manage_options',
                 'comment-limiter',
-                array( $this, 'comment_limiter_admin_page' ),
-                'dashicons-format-chat',
-                26
+                array( $this, 'comment_limiter_admin_page' )
             );
         }
 
