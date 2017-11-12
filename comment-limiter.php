@@ -17,6 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 define( 'CL_VERSION', '1.2' );
 
+// Require necessary files
 require_once plugin_dir_path( __FILE__ ) . '/includes/class-comment-limiter-i18n.php';
 require_once plugin_dir_path( __FILE__ ) . '/includes/class-comment-limiter-config.php';
 require_once plugin_dir_path( __FILE__ ) . '/includes/class-comment-limiter-settings.php';
