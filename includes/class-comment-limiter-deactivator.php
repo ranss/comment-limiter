@@ -1,13 +1,13 @@
 <?php
 /**
- * If accessed directly, then exit
+ * If accessed directly, then exit.
  */
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
 /**
- * Check if class already exists
+ * Check if class already exists.
  */
 if ( ! class_exists( 'Comment_Limiter_Deactivator' ) ) {
 
@@ -18,14 +18,14 @@ if ( ! class_exists( 'Comment_Limiter_Deactivator' ) ) {
     {
 
         /**
-         * Property instance
+         * Property instance.
          * 
          * @var object
          */
         private static $_instance;
 
         /**
-         * Create default values
+         * Create default values.
          */
         public function __construct() {
 
@@ -45,7 +45,7 @@ if ( ! class_exists( 'Comment_Limiter_Deactivator' ) ) {
 
         /**
          * Comment Limiter Deactivator.
-         * Fire this function when the plugin is deactivated
+         * Fire this function when the plugin is deactivated.
          *
          * @since    1.0
          */

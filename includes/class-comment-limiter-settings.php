@@ -1,23 +1,23 @@
 <?php
 /**
- * If accessed directly, then exit
+ * If accessed directly, then exit.
  */
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
 /**
- * If class do not exists, then create it
+ * If class do not exists, then create it.
  */
 if ( ! class_exists( 'Comment_Limiter' ) ) {
     
     /**
-     * Class that holds Comment Limiter settings
+     * Class that holds Comment Limiter settings.
      */
     class Comment_Limiter_Settings
     {
         /**
-         * Property instance
+         * Property instance.
          * 
          * @since 1.0
          * @var object
@@ -25,7 +25,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
         private static $_instance;
 
         /**
-         * Handles get_option values
+         * Handles get_option values.
          *
          * @since 1.0
          * @var array
@@ -33,7 +33,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
         private $_comment_limiter_options;
 
         /**
-         * handles default values
+         * handles default values.
          *
          * @since 1.0
          * @var array
@@ -41,7 +41,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
         public $defaults = array();
         
         /**
-         * Constructor
+         * Constructor.
          *
          * @since 1.0
          */
@@ -50,7 +50,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
         }
 
         /**
-         * Setup action and filter hooks
+         * Setup action and filter hooks.
          *
          * @since 1.0
          * @return void
@@ -66,7 +66,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
         }
 
         /**
-         * Enqueue style
+         * Enqueue style.
          *
          * @since 1.0
          * @return void
@@ -78,7 +78,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
         }
 
         /**
-         * Add submenu page in the dashboard
+         * Add submenu page in the dashboard.
          *
          * @since 1.0
          * @return string
@@ -96,7 +96,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
         }
 
         /**
-         * Setup HTML form
+         * Setup HTML form.
          *
          * @since 1.0
          * @return void
@@ -129,7 +129,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
         }
 
         /**
-         * Register settings
+         * Register plugin settings.
          *
          * @since 1.0
          * @return void
@@ -187,7 +187,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
         }
 
         /**
-         * Sanitize and validate fields
+         * Sanitize and validate fields.
          *
          * @since 1.0
          * @param  array
@@ -220,7 +220,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
         }
 
         /**
-         * Sectiton description
+         * Sectiton description.
          *
          * @since 1.0
          * @return void
@@ -231,7 +231,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
         }
 
         /**
-         * Check comment length
+         * Check comment length.
          *
          * @since 1.0
          * @param  array
@@ -275,7 +275,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
         }
 
         /**
-         * Setup maximum characters field
+         * Setup maximum characters field.
          *
          * @since 1.0
          * @return
@@ -292,7 +292,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
         }
 
         /**
-         * Setup minimum characters field
+         * Setup minimum characters field.
          *
          * @since 1.0
          * @return
@@ -309,7 +309,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
         }
 
         /**
-         * Setup dropdown field
+         * Setup dropdown field.
          *
          * @since 1.0
          * @return
@@ -328,7 +328,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
         }
 
         /**
-         * Instance class object
+         * Instance class object.
          *
          * @since 1.0
          * @return object

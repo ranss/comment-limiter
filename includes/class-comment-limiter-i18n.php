@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! class_exists( 'Comment_Limiter_i18n' ) ) {
 
     /**
-     * Class that setup Comment Limiter internationalization
+     * Class that setup Comment Limiter internationalization.
      */
     class Comment_Limiter_i18n
     {
@@ -26,7 +26,7 @@ if ( ! class_exists( 'Comment_Limiter_i18n' ) ) {
         private static $_instance;
 
         /**
-         * Fire action and filter hooks
+         * Fire action and filter hooks.
          *
          * @since 1.0
          */

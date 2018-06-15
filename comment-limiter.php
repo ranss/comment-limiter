@@ -30,7 +30,7 @@ Comment_Limiter_Deactivator::factory();
 
 
 /**
- * Add settings link to plugin actions
+ * Add settings link to plugin actions.
  *
  * @param  array  $plugin_actions
  * @param  string $plugin_file
