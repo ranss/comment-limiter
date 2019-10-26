@@ -17,10 +17,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 define( 'CL_VERSION', '2' );
 
-require_once plugin_dir_path( __FILE__ ) . '/includes/class-comment-limiter-i18n.php';
-require_once plugin_dir_path( __FILE__ ) . '/includes/class-comment-limiter-config.php';
-require_once plugin_dir_path( __FILE__ ) . '/includes/class-comment-limiter-settings.php';
-require_once plugin_dir_path( __FILE__ ) . '/includes/class-comment-limiter-deactivator.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/class-comment-limiter-i18n.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/class-comment-limiter-config.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/class-comment-limiter-settings.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/class-comment-limiter-deactivator.php';
 
 
 Comment_Limiter_i18n::factory();

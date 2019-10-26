@@ -227,7 +227,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
          */
         public function comment_limiter_section_info() {
 
-            // ...
+            echo 'Here you can put anything you want.';
         }
 
         /**
