@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'CL_VERSION', '1.2' );
+define( 'CL_VERSION', '2' );
 
 require_once plugin_dir_path( __FILE__ ) . '/includes/class-comment-limiter-i18n.php';
 require_once plugin_dir_path( __FILE__ ) . '/includes/class-comment-limiter-config.php';
