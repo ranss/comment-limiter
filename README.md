@@ -22,5 +22,17 @@ For questions, feature requests, and support concerning the Comment Limiter plug
 
 ## Changelog
 
+#### 1.3
+* Standarized code improved
+* Spelling issue resolved
+* GPL plugin version updated
+
+#### 1.2
+* New Update
+
+#### 1.1
+* Moved menu under top-level Comments dashboard menu
+* Tested on WordPress 4.9 for compatibility
+
 #### 1.0
 * Plugin released
