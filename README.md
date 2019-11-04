@@ -23,6 +23,7 @@ For questions, feature requests, and support concerning the Comment Limiter plug
 ## Changelog
 
 #### 1.3
+* Minimum characters number by default changed
 * Standarized code improved
 * Spelling issue resolved
 * GPL plugin version updated
