@@ -2,15 +2,14 @@
 /**
  * If accessed directly, then exit
  */
-if ( ! defined( 'ABSPATH' ) ) {
-    exit;
-}
+defined( 'ABSPATH' ) || exit;
+
 
 /**
  * If class do not exists, then create it
  */
 if ( ! class_exists( 'Comment_Limiter' ) ) {
-    
+
     /**
      * Class that holds Comment Limiter settings
      */
@@ -18,7 +17,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
     {
         /**
          * Property instance
-         * 
+         *
          * @since 1.0
          * @var object
          */
@@ -39,7 +38,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
          * @var array
          */
         public $defaults = array();
-        
+
         /**
          * Constructor
          *
@@ -125,7 +124,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
                     ?>
                 </form>
             </div>
-            <?php 
+            <?php
         }
 
         /**
@@ -174,9 +173,9 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
             );
 
             add_settings_field(
-                'enable_admin_feature', 
-                __( 'Apply Settings to Admins', 'comment-limiter' ), 
-                array( $this, 'comment_limiter_dropdown' ), 
+                'enable_admin_feature',
+                __( 'Apply Settings to Admins', 'comment-limiter' ),
+                array( $this, 'comment_limiter_dropdown' ),
                 'comment-limiter-admin',
                 'comment_limiter_section' ,
                 array(
@@ -199,10 +198,10 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
 
             if ( $input['maximum_characters'] <= $input['minimum_characters'] ) {
                 add_settings_error( 'comment-limiter-messages', 'invalid-values', __( 'Invalid lengths. Please insert logical values.', 'comment-limiter' ) );
-                
+
                 return $output;
             }
-            
+
             if ( isset( $input['maximum_characters'] ) ) {
                 $output['maximum_characters'] = sanitize_text_field( absint( $input['maximum_characters'] ) );
             }
@@ -287,7 +286,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
             ?>
             <input type="number" name="comment_limiter_settings[maximum_characters]" id="maximum_characters" class="regular-text" value="<?php esc_html_e( $config['maximum_characters'], 'comment-limiter' ); ?>" />
             <span class="description"><?php esc_html_e( 'Accepts only numbers', 'comment-limiter' ); ?></span>
-            <p class="description"><?php esc_html_e( 'If the user inserts a comment that is fewer than the number selected above, then, it will receives an advice message to extend his comment.', 'comment-limiter' ); ?></p>
+            <p class="description"><?php esc_html_e( 'If the user inserts a comment that is lower than the number selected above, then, he will receives an advice message to extend his comment.', 'comment-limiter' ); ?></p>
             <?php
         }
 
@@ -298,13 +297,13 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
          * @return
          */
         public function minimum_characters_callback() {
-            
+
             $config = Comment_Limiter_Config::factory()->get();
 
             ?>
             <input type="number" name="comment_limiter_settings[minimum_characters]" id="minimum_characters" class="regular-text" value="<?php esc_html_e( $config['minimum_characters'], 'comment-limiter' ); ?>" />
             <span class="description"><?php esc_html_e( 'Accepts only numbers', 'comment-limiter' ); ?></span>
-            <p class="description"><?php esc_html_e( 'If the user inserts a comment that is larger than the number selected above, then, it will receives an advice message to minimize his comment.', 'comment-limiter' ); ?></p>
+            <p class="description"><?php esc_html_e( 'If the user inserts a comment that is greater than the number selected above, then, he will receives an advice message to abbreviate his comment.', 'comment-limiter' ); ?></p>
             <?php
         }
 

@@ -2,15 +2,14 @@
 /**
  * If accessed directly, then exit.
  */
-if ( ! defined( 'ABSPATH' ) ) {
-    exit;
-}
+defined( 'ABSPATH' ) || exit;
+
 
 /**
  * Check if class already exists.
  */
 if ( ! class_exists( 'Comment_Limiter_Config' ) ) {
-    
+
     /**
      * Configuration class.
      */
@@ -19,14 +18,14 @@ if ( ! class_exists( 'Comment_Limiter_Config' ) ) {
 
         /**
          * Property instance.
-         * 
+         *
          * @var object
          */
         private static $_instance;
 
         /**
          * Handles default values.
-         * 
+         *
          * @var array
          */
         public $defaults = array();
@@ -41,7 +40,7 @@ if ( ! class_exists( 'Comment_Limiter_Config' ) ) {
                     'default' => 2400,
                 ),
                 'minimum_characters' => array(
-                    'default' => 320,
+                    'default' => 10,
                 ),
                 'enable_admin_feature' => array(
                     'default' => 'no',
@@ -51,14 +50,14 @@ if ( ! class_exists( 'Comment_Limiter_Config' ) ) {
 
         /**
          * Return only default values.
-         * 
+         *
          * @return array default values
          */
         public function get_defaults() {
 
             $defaults = array();
-            foreach ($this->defaults as $key => $default) {
-                $defaults[ $key ] = $default['default'];
+            foreach ( $this->defaults as $key => $default ) {
+                $defaults[ $key ] = $default[ 'default' ];
             }
 
             return $defaults;
@@ -66,7 +65,7 @@ if ( ! class_exists( 'Comment_Limiter_Config' ) ) {
 
         /**
          * Parse default values.
-         * 
+         *
          * @return array default values parsed
          */
         public function get() {
@@ -78,7 +77,7 @@ if ( ! class_exists( 'Comment_Limiter_Config' ) ) {
 
         /**
          * Instance class object.
-         * 
+         *
          * @return object
          */
         public static function factory() {
