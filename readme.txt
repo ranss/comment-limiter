@@ -31,7 +31,7 @@ For questions, feature requests, and support concerning the Comment Limiter plug
 
 == Changelog ==
 
-== 1.3 ==
+= 1.3 =
 * Standarized code improved
 * Spelling issue resolved
 * GPL plugin version updated
