@@ -5,7 +5,7 @@ Description: A simple plugin that limit the maximum and minimum of characters al
 Version:     1.3
 Author:      Anass Rahou
 Author URI:  https://wpbody.com/
-License:     GPL2
+License:     GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: comment-limiter
 Domain Path: /languages
