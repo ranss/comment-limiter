@@ -2,9 +2,7 @@
 /**
  * If accessed directly, then exit
  */
-if ( ! defined( 'ABSPATH' ) ) {
-    exit;
-}
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Check if class already exists
@@ -19,7 +17,7 @@ if ( ! class_exists( 'Comment_Limiter_Deactivator' ) ) {
 
         /**
          * Property instance
-         * 
+         *
          * @var object
          */
         private static $_instance;
@@ -56,12 +54,12 @@ if ( ! class_exists( 'Comment_Limiter_Deactivator' ) ) {
 
         /**
          * Unregister setting method.
-         * 
+         *
          * @since   1.0
          * @return void
          */
         public function deactivate_comment_limiter() {
-            
+
             unregister_setting(
                 'comment_limiter_group',
                 'comment_limiter_settings'
@@ -75,7 +73,7 @@ if ( ! class_exists( 'Comment_Limiter_Deactivator' ) ) {
          * @return object
          */
         public static function factory() {
-            
+
             if ( ! self::$_instance ) {
                 self::$_instance = new self();
             }
