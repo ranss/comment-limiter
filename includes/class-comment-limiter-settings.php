@@ -8,7 +8,7 @@ defined( 'ABSPATH' ) || exit;
 /**
  * If class do not exists, then create it
  */
-if ( ! class_exists( 'Comment_Limiter' ) ) {
+if ( ! class_exists( 'Comment_Limiter_Settings' ) ) {
 
     /**
      * Class that holds Comment Limiter settings
@@ -57,7 +57,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
         public function setup() {
 
             add_action( 'admin_init',            array( $this, 'comment_limiter_page_init' ) );
-            add_action( 'admin_menu',            array( $this, 'comment_limiter_add_plugin_page' ) );
+            add_action( 'admin_menu',            array( $this, 'comment_limiter_add_submenu_page' ) );
             add_filter( 'preprocess_comment',    array( $this, 'comment_limiter_checker' ) );
             add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_styles' ) );
 
@@ -82,7 +82,7 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
          * @since 1.0
          * @return string
          */
-        public function comment_limiter_add_plugin_page() {
+        public function comment_limiter_add_submenu_page() {
 
             add_submenu_page(
                 'edit-comments.php',
@@ -225,7 +225,6 @@ if ( ! class_exists( 'Comment_Limiter' ) ) {
          * @return void
          */
         public function comment_limiter_section_info() {
-
             // ...
         }
 
