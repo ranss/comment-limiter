@@ -2,9 +2,8 @@
 /**
  * If accessed directly, then exit.
  */
-if ( ! defined( 'ABSPATH' ) ) {
-    exit;
-}
+defined( 'ABSPATH' ) || exit;
+
 
 /**
  * If class do not exists, then create it.
@@ -43,7 +42,7 @@ if ( ! class_exists( 'Comment_Limiter_i18n' ) ) {
         public function setup() {
             add_action( 'plugins_loaded', array( $this, 'load_plugin_textdomain' ) );
         }
-        
+
         /**
          * Load the plugin text domain for translation.
          *

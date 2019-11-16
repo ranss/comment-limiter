@@ -4,6 +4,7 @@
  */
 defined( 'ABSPATH' ) || exit;
 
+
 /**
  * Check if class already exists
  */
