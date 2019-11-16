@@ -2,7 +2,7 @@
 /*
 Plugin Name: Comment Limiter
 Description: A simple plugin that limit the maximum and minimum of characters allowed in a post comment
-Version:     1.3
+Version:     2.0
 Author:      Anass Rahou
 Author URI:  https://wpbody.com/
 License:     GPL v2 or later
@@ -13,8 +13,9 @@ Domain Path: /languages
 
 defined( 'ABSPATH' ) || exit;
 
+
 if( ! defined( 'CL_VERSION' ) ) {
-  define( 'CL_VERSION', '1.3' );
+  define( 'CL_VERSION', '2.0' );
 }
 
 if ( ! defined( 'CL_PLUGIN_PATH' ) ) {

@@ -1,14 +1,26 @@
 .comment-limiter-form tr {
     display: block;
+    margin-bottom: 20px;
+}
+
+#comment-limiter table {
+    width: 100%;
+}
+
+#comment-limiter span {
+    display: block;
     margin-bottom: 10px;
 }
 
-.form-table {
-    width: 50%;
+#comment-limiter .description {
+	width: 50%;
 }
 
-tr.maximum_characters span.description,
-tr.minimum_characters span.description {
-    margin-bottom: 10px;
-    display: inline-block;
+#comment-limiter input {
+	width: 20%;
+}
+
+#comment-limiter textarea {
+	width: 50%;
+	padding: 5px;
 }

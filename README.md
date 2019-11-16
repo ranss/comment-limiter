@@ -22,6 +22,11 @@ For questions, feature requests, and support concerning the Comment Limiter plug
 
 ## Changelog
 
+#### 2.0
+* Enhanced Panel Design
+* Customizable warning messages
+* General code improved
+
 #### 1.3
 * Minimum characters number by default changed
 * Standarized code improved

@@ -3,7 +3,7 @@ Contributors: ranss
 Tags: comment, length, limit, maximum, comment length, minimum comment, comment characters
 Requires at least: 4.0
 Tested up to: 5.2.4
-Stable tag: 1.3
+Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,8 +21,8 @@ Pull requests are welcome on [Github](https://github.com/ranss/comment-limiter).
 == Installation ==
 
 1. Install the plugin through your dashboard.
-2. Navigate to Comment Limiter top-level menu.
-3. Insert your settings values.
+2. Navigate to Comments >> Comment Limiter sub-level menu.
+3. Insert your settings values and save changes.
 3. Done.
 
 == Support ==
@@ -30,6 +30,11 @@ Pull requests are welcome on [Github](https://github.com/ranss/comment-limiter).
 For questions, feature requests, and support concerning the Comment Limiter plugin, please refer to [Github](https://github.com/ranss/comment-limiter).
 
 == Changelog ==
+
+= 2.0 =
+* Enhanced Panel Design
+* Customizable warning messages
+* General code improved
 
 = 1.3 =
 * Standarized code improved

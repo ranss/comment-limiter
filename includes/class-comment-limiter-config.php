@@ -37,10 +37,16 @@ if ( ! class_exists( 'Comment_Limiter_Config' ) ) {
 
             $this->defaults = array(
                 'maximum_characters' => array(
-                    'default' => 2400,
+                    'default' => 1000,
+                ),
+                'maximum_message' => array(
+                    'default' => 'Your message exceeds the maximum limit allowed. Please try to reduce it.',
                 ),
                 'minimum_characters' => array(
-                    'default' => 10,
+                    'default' => 20,
+                ),
+                'minimum_message' => array(
+                    'default' => 'Your message is below the minimum allowed limit. Please try to be more expressive.',
                 ),
                 'enable_admin_feature' => array(
                     'default' => 'no',
