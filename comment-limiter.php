@@ -11,8 +11,10 @@ Text Domain: comment-limiter
 Domain Path: /languages
 */
 
-defined( 'ABSPATH' ) || exit;
-
+if ( ! function_exists( 'add_action' ) ) {
+  echo "Action not allowed!";
+  exit;
+}
 
 if( ! defined( 'CL_VERSION' ) ) {
   define( 'CL_VERSION', '2.0' );
