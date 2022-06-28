@@ -3,7 +3,7 @@ Contributors: ranss
 Tags: comment, length, limit, maximum, comment length, minimum comment, comment characters
 Requires at least: 4.0
 Tested up to: 5.2.4
-Stable tag: 2.0
+Stable tag: 3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
