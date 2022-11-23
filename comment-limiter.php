@@ -2,7 +2,7 @@
 /*
 Plugin Name: Comment Limiter
 Description: A simple plugin that limit the maximum and minimum of characters allowed in a post comment
-Version:     2.1
+Version:     2.2
 Author:      Anass Rahou
 Author URI:  https://ranss.me/
 License:     GPL v2 or later
