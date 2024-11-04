@@ -22,6 +22,14 @@ For questions, feature requests, and support concerning the Comment Limiter plug
 
 ## Changelog
 
+#### 2.1
+* Character counter on real-time
+* Enhanced sanitization
+* Progress bar added
+* More friendly information messages when typing
+* Code updated
+* Intuitive user interface
+
 #### 2.0
 * Enhanced Panel Design
 * Customizable warning messages
