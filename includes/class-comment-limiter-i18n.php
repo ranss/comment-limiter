@@ -40,7 +40,7 @@ if ( ! class_exists( 'Comment_Limiter_i18n' ) ) {
          * @return boolean
          */
         public function setup() {
-            add_action( 'plugins_loaded', array( $this, 'load_plugin_textdomain' ) );
+            add_action( 'plugins_loaded', array( $this, 'comment_limiter_textdomain' ) );
         }
 
         /**
@@ -48,7 +48,7 @@ if ( ! class_exists( 'Comment_Limiter_i18n' ) ) {
          *
          * @since 1.0
          */
-        public function load_plugin_textdomain() {
+        public function comment_limiter_textdomain() {
             load_plugin_textdomain(
                 'comment-limiter',
                 false,

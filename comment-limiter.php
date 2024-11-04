@@ -2,7 +2,7 @@
 /*
 Plugin Name: Comment Limiter
 Description: A simple plugin that limit the maximum and minimum of characters allowed in a post comment
-Version:     2.0
+Version:     2.1
 Author:      Anass Rahou
 Author URI:  https://wpbody.com/
 License:     GPL v2 or later
@@ -22,10 +22,19 @@ if ( ! defined( 'CL_PLUGIN_PATH' ) ) {
   define( 'CL_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 }
 
-require_once CL_PLUGIN_PATH . 'includes/class-comment-limiter-i18n.php';
-require_once CL_PLUGIN_PATH . 'includes/class-comment-limiter-config.php';
-require_once CL_PLUGIN_PATH . 'includes/class-comment-limiter-settings.php';
-require_once CL_PLUGIN_PATH . 'includes/class-comment-limiter-deactivator.php';
+$files = [
+    'includes/class-comment-limiter-i18n.php',
+    'includes/class-comment-limiter-config.php',
+    'includes/class-comment-limiter-settings.php',
+    'includes/class-comment-limiter-deactivator.php'
+];
+
+foreach ( $files as $file ) {
+    $path = CL_PLUGIN_PATH . $file;
+    if ( file_exists( $path ) ) {
+        require_once $path;
+    }
+}
 
 
 Comment_Limiter_i18n::factory();
@@ -43,13 +52,29 @@ Comment_Limiter_Deactivator::factory();
  * @return array
  */
 function cl_filter_plugin_action_links( $plugin_actions, $plugin_file ) {
-
-    $new_actions = array();
-
-    if ( basename( CL_PLUGIN_PATH ) . 'comment-limiter.php' === $plugin_file ) {
-        $new_actions['cl_settings'] = sprintf( __( '<a href="%s">Settings</a>', 'comment-limiter' ), esc_url( admin_url( 'options-general.php?page=comment-limiter' ) ) );
+    // Ensure $plugin_actions is an array
+    if ( ! is_array( $plugin_actions ) ) {
+        $plugin_actions = [];
     }
 
-    return array_merge( $new_actions, $plugin_actions );
+    // Check if the current plugin is the Comment Limiter
+    if ( basename( CL_PLUGIN_PATH ) . '/comment-limiter.php' === $plugin_file ) {
+        $settings_link = sprintf(
+            '<a href="%s">%s</a>',
+            esc_url( admin_url( 'edit-comments.php?page=comment-limiter' ) ),
+            esc_html__( 'Settings', 'comment-limiter' )
+        );
+        
+        // Add the settings link to the array
+        $plugin_actions['cl_settings'] = $settings_link;
+    }
+
+    return array_merge( $plugin_actions, $plugin_actions );
 }
 add_filter( 'plugin_action_links', 'cl_filter_plugin_action_links', 10, 2 );
+
+
+function add_character_counter() {
+    echo '<div id="char-count" style="margin-top: 5px;">0</div>';
+}
+add_action( 'comment_form_after_fields', 'add_character_counter' );
