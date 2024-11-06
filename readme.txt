@@ -2,8 +2,8 @@
 Contributors: ranss
 Tags: comment, length, limit, maximum, comment length, minimum comment, comment characters
 Requires at least: 4.0
-Tested up to: 5.2.4
-Stable tag: 2.0
+Tested up to: 6.6.2
+Stable tag: 2.2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,14 @@ Pull requests are welcome on [Github](https://github.com/ranss/comment-limiter).
 For questions, feature requests, and support concerning the Comment Limiter plugin, please refer to [Github](https://github.com/ranss/comment-limiter).
 
 == Changelog ==
+
+= 2.2.3 =
+
+* Updated tested version
+
+= 2.2.1 =
+
+* Bug fixes
 
 = 2.1 =
 
